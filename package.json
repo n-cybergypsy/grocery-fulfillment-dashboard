@@ -1,0 +1,15 @@
+{
+  "name": "grocery-fulfillment-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:client": "npm run dev -w @grocery/client",
+    "dev:server": "npm run dev -w @grocery/server",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  }
+}
